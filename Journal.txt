@@ -1,0 +1,80 @@
+2026-04-30 
+
+Task 1: Let's Create Name and Logo of our Website [Done]
+Task 2: Create that functionality so that it looks good and Data is getting loaded 
+Task 3: Enhance the Navbar of the Application First When Users not logged in and after that when users are logged in [Done], 
+Problems in Mobile Navbar 
+In Both Sections, We Will not display Home About and Contact if user is logged in 
+In Mobile Menu We need to Create hamburger on and off functionality 
+In Mobile View When Menus When Menu is not Open we need to show the Notifcation and Chat Icons and 
+In Mobile View We need to Create a full section for our notifications.
+Let's organize the Navbar First [our Navbar is Done ] It Was a lot and Now we need to orgainze the code in the Navbar
+2 More Isssues
+Profile is not showing in Desktop
+Search button is not showing in desktop 
+Navbar Completed and Now Let's Quickly in next 14 Minutes we need to Complete our footer 
+Let's  Do All Client Functionality and Improve and Ehhance the UI 
+Client Home Page - Looks Good 
+
+Now Let's Move to Chat System and Enhance It and Make it Like Pro 
+
+2026-05-01 
+
+Today I am going to build a chat system where users can send and receive text images and emojis in real-time 
+
+Let's Test the text and Image upload in the backend is working alright ? 
+
+We basically need to test 2 APIs Which Send Message and File Upload 
+
+{
+    "success": true,
+    "url": "https://res.cloudinary.com/dbunlmglw/image/upload/v1777617998/ijcphfkb8ddxfvg8y6fg.png",
+    "type": "image",
+    "originalName": "ChatGPT Image Apr 30, 2026, 11_21_50 AM.png"
+}
+
+Testing the Functionality and UI of the Appplication to End - End 
+Create a Post Job and View Your Jobs Section Inside a Navbar for Clients and also put those in a drop down menu of clent profile 
+
+Task 1
+
+- There is some issues With hire functionality suppose user clicks on hire 
+
+So Minimum MVP on Project Side is Working but we do not want that I Want to make it Production so how can we do it, Well We Will Work on feature at a time so we will Solve 1 Problem and Move to other and Solve the next One and then move to other.. 
+
+Problem 1: Location Based Search of the Workers, We need to take client location and return those workers who is 10KM radius of that location so as per client there will be 3 APIs Where we need location based filtering and that 3 APIs When Client View the category Section When Client Will Search about the Worker and other the too much worker has applied and we need to rank them. so, how can we that ? Because we can store the location of client in database but we can not store the location of the Workers in the database because it will keep on chaning so how can we that give me some ideas 
+and Now let's just go to those 3 APIs that we have discuessed SearchUser, Categories and Applied Workers Ranked [Fixed]
+
+Major Task : OTP Verification With Phone Signup and login for Nepal Based 
+Last : Let's Go Through the Job Life Cycle and After This Project Gets Deployed and We Will Fix the UI and this Project Goes into our CV and also We will be Maintaining this Project to Launch 
+
+Task: Let's Create a Job Section in the navbar for the user.
+
+2026-05-02 
+
+Task 1: We do not have any Browse Job Functionality so, I am going to make it a Browse job functionality section in the users Where they can browse similar jobs according to their service or profile and in ascending order and something like that We will fetch the jobs matching with the users profile like that 
+
+Task2: Now We need to discuss and Build a Bullet Proof Job Life Cycle in our frontend and It is the Most Important Part.. 
+1-> Client Will Post the Job -> Let's Build 5 Jobs, While Posting the Job Will be in Open State, We need to do Real-time Update of these things Easy Apply -> Applying -> Applied  Save -> Saved  Hire - Hired others Filled and disable 
+What do we need to improve, If we workers have applied for a particular jobs then we need to show that use Applied insted of Apply or Easy Apply 
+Our Hire Button is not behaving Properly so We need to debug that and solve it 
+Also Do the Same For Saved Buttons After Hiring There Will be a Section in Both client and User to track the current Jobs Where the Worker Have been Hired to track the Progress or just to keep it there, so those 3 things have been fixed and now for better handling of jobs we need to create an Agreement of the jobs called Jobs Agreement Section between client and Worker to track the jobs, When Workers gets hired we will create an agreemnet between them in backend and that agreement gonna hold job client and worker ids and we will populate and display them. 
+
+2026-05-03
+
+Task 1: We are still behind on our feature for jobs Agreement section and we will do that now, What will it hold like when the client hires the worker an agreement will be created betwwn client and worker which will have job client and worker and we Will populate some fields and after that show the data in the frontend so yes that's the Idea for this its just simple acknowledgement of the jobs and after that we will provide some message functionality in that section and also we will call have the job Completed button which will complete the jobs and one ratings and review after job completion for the client which will be added to users rating and reviews filled and also upon completion og of the job we will increase the jobCount by 1 for the worker and after building this thing I just need to work on some UI and Make it Production ready and launch it so today is the last day i am working on feature in this application yes we will work on some other fields but You know what i mean to say so let's go.. Now in Each agreemnts what are the things that you need to do remove that view details button use Mark Job Completed button and apply that functionality I think our Jobs Agreement Section is also Completed and Now We Just need to Test our Application Solve Bugs, Make it Fast Good UI and Production Ready and then Can we Do this and Convert it into Our Startup and Tomorrow is the Last Day on this Product of course in development Phase and No We Will Keep on Adding and Solving Issues 
+
+2026-05-04 
+
+Today, we are going to work on some UI Enhancement and Platform Enhancement ensure every feature on our platform works well and make sure the users do not get hassled upon so yeah that's gonna be our work for us today so let's keep in on that so yeah that might work well for us let's Do that 
+
+Task 1: Ensure All the Features and UI is working well When users are not signed up meaning we need to handle proper signup and login functionality today and make our UI do not break in mobile view or desktop view so let's do that for now, In Mobile view there is a duplicate home about and contact section so we need to remove that so that's good every features when the user is created is working so we have made good and we need to create some loader page or we  can use SplashScreen on loading evry where and our features are working now let's go with the client section first 
+
+Task 2: Now we need to make sure everything in the client section works well and there is not any hassle for the client and UI does not break so first we need to make sure every features is working well for client, Baaring the Job Life cycle functionality our UI is working well in desktop and now we need to see our UI in Mobile view, We got a problem if the review has already been posted by the client then if the try to post it again we need to show review already posted toaster but there is some error, Baaring the job life cycle I think every thing is working well for client also and now we will be making sure that our worker section is also working [Done]
+
+Task 3: Now, we need to make sure all the UI and all the functionalities of the worker section are working as well, We need to 1 Sections in desktop and later 3 Sections in profile menu of the worker so let's first add the jobs and Browse jobs in the mobile view 
+
+Task 4: Now, We Just need 2 things in our app to make it good which is a Complete Job Lifecycle Feature and then after that we need to add an Error Page in Some of the big pages of our application 
+Job Lifecycle
+1. Client Will Create Jobs - [Let's Create 5 Jobs]
+2. Different users will apply for the jobs and minimilistic features is done well and now we need to make sure that everything will work in deployment then deploy this application online 
