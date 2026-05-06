@@ -13,6 +13,8 @@ const Home = () => {
   const {user} = useSelector((state)=>state.auth)
   const [updateLocation] = useUpdateLocationMutation()
 
+  console.log("Our Backend:", import.meta.env.VITE_BACKEND_URL)
+
   useEffect(()=>{
     if (!user) return;
     if(!navigator.geolocation){
