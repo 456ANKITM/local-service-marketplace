@@ -78,3 +78,9 @@ Task 4: Now, We Just need 2 things in our app to make it good which is a Complet
 Job Lifecycle
 1. Client Will Create Jobs - [Let's Create 5 Jobs]
 2. Different users will apply for the jobs and minimilistic features is done well and now we need to make sure that everything will work in deployment then deploy this application online 
+
+2026-05-07 
+
+Today There are some bugs occured on our website on deployment and we are going to solve them today.. 
+
+1st Bug: Our Icon is not showing even on navbar or splashScrren or footer in production 

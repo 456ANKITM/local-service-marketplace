@@ -159,7 +159,7 @@ const Navbar = () => {
 
       <img
         onClick={() => navigate("/")}
-        src="../../public/favicon.svg"
+        src="favicon.svg"
         alt="logo"
         className="w-8 h-8  cursor-pointer hover:scale-105 transition"
       />
