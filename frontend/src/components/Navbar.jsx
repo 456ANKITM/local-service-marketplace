@@ -259,7 +259,7 @@ const Navbar = () => {
       )}
 
       {/* Desktop Menu -  When users is not logged in  */}
-      <div className=" md:flex items-center gap-6 text-sm">
+      <div className=" hidden md:flex items-center gap-6 text-sm">
         {!isLoggedIn && (
           <>
             <Link className="hover:text-gray-500 transition" to="/">
