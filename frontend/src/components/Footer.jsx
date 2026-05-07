@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/favicon.svg";
 
 const Footer = () => {
   return (
@@ -10,11 +11,10 @@ const Footer = () => {
         {/* Logo + Description */}
         <div>
           <img
-            src="favicon.svg"
+            src={logo}
             alt="logo"
             className="mb-4 h-10"
           />
-
           <p className="text-sm leading-relaxed text-gray-500">
             We connect you with trusted local professionals for everyday services.
             From electricians to drivers, find and hire easily with confidence.

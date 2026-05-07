@@ -26,6 +26,7 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import { socket } from "../socket";
 import { logoutUser } from "../redux/slices/authSlice";
+import logo from "../assets/favicon.svg";
 
 dayjs.extend(relativeTime);
 
@@ -159,7 +160,7 @@ const Navbar = () => {
 
       <img
         onClick={() => navigate("/")}
-        src="favicon.svg"
+        src={logo}
         alt="logo"
         className="w-8 h-8  cursor-pointer hover:scale-105 transition"
       />

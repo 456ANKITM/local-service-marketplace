@@ -83,4 +83,5 @@ Job Lifecycle
 
 Today There are some bugs occured on our website on deployment and we are going to solve them today.. 
 
-1st Bug: Our Icon is not showing even on navbar or splashScrren or footer in production 
+1st Bug: Our Icon is not showing even on navbar or splashScrren or footer in production [Done]
+2nd Bug: The Home Page Navbar logo is fine its working but when we go to other pages it still not working well 
