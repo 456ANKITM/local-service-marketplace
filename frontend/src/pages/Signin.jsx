@@ -15,6 +15,7 @@ const Signin = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = async (e) => {
+    console.log("Its Working")
     e.preventDefault();
     try {
       const res = await login({
