@@ -52,7 +52,7 @@ const App = () => {
             longitude
           }).unwrap();
           if(res.success) {
-            toast.success("Location Updated successfully")
+            // toast.success("Location Updated successfully")
           } else {
             toast.error("Location did not updated")
           }

@@ -91,5 +91,5 @@ Today There are some bugs occured on our website on deployment and we are going 
 
 What is the true goal of this project ? Why are you even building this project, The true goal of this project is to make it avialable to people in Nepal and kathmandu for local services so how are we going to earn money through it ? For Instance We are going to charge integrate a payment system so that we will remove the budget type and we will be using hourly fixed on day basis and only pay via platform so people will via platform and we will get money for that okay so its going to be very good for us We have the idea of making money with this app so let's just do it Implement those things, We have to fix some Bugs of our live Application 
 
-Bug 1: 
+Bug 1: Fix the Cookie issue 
 
