@@ -77,12 +77,12 @@ export const login = async (req, res) => {
     const userData = user.toObject();
     delete userData.password;
 
-    res.cookie("token", token, {
-      httpOnly:true,
-      secure:false,
-      sameSite:"Strict",
-      maxAge:7*24*60*60*1000
-    })
+   res.cookie("token", token, {
+  httpOnly: true,
+  secure: process.env.NODE_ENV === "production",
+  sameSite: process.env.NODE_ENV === "production" ? "None" : "Lax",
+  maxAge: 7 * 24 * 60 * 60 * 1000,
+});
 
     res.json({success:true, message:"Login Successfull", user:userData})
     
