@@ -91,5 +91,21 @@ Today There are some bugs occured on our website on deployment and we are going 
 
 What is the true goal of this project ? Why are you even building this project, The true goal of this project is to make it avialable to people in Nepal and kathmandu for local services so how are we going to earn money through it ? For Instance We are going to charge integrate a payment system so that we will remove the budget type and we will be using hourly fixed on day basis and only pay via platform so people will via platform and we will get money for that okay so its going to be very good for us We have the idea of making money with this app so let's just do it Implement those things, We have to fix some Bugs of our live Application 
 
-Bug 1: Fix the Cookie issue 
+What is your end goal from this project ? What do you want to acheive from this project ? okay so, the end goal is to make this project or turn this into a startup and earn money so there will be an app installed on the person's phone in Nepal and if they do not get anything done like they need a babysitter or anything like that which is gonna be daily hourly or fixed these three payment method then it will get done so yeah i think its going to be a good platform so this is going to be complex application so we need to take care of that also we need to make it very intuitive for both cient and worker here so we need to focus on that as well we will get 10% comission from every task completed its going to be a compact team of mainly 5-10 people where 1 task will be suppose 1000 then 100 from 1 task if 100 task daily 100 * 100 = 10000 meaning 300000 and its going to be a money making machine if we do it nicely and other is going to be a freelancing platform I belive freelancing platform has more demand and more workly because there we can make money in a good amount if we do it nicely so yeah this project is going to be good 
 
+1st Module: Auth System 
+
+Sign up 
+Log in 
+Password Hashing
+Session / JWT Token System
+Forgot Password 
+Security Features [2FA + Device Tracking + Login Alerts + Session Expiration]
+
+Sign up 
+
+So Client Will Sign up using Name, phone for later but right now I am using email there will be a phone + OTP Later, password, Role if client then just role if worker then services they will provide and if its a client then so be it then after login will will be through phone number and password but we will not logout user at any point unless they tried to do it themselves okay so we need to focus on session and JWT Tokens 
+
+Task 1: Implement that Bug for cookie and localStorage mishmatch in the frontend inside an App.jsx [Done]
+
+I think our auth system is somewhat nicer there is still i thing left about sign up with Phone and OTP We Will do that later and now we move forward 

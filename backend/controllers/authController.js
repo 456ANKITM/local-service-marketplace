@@ -14,7 +14,6 @@ export const signup = async (req, res) => {
       });
     }
 
-
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(409).json({ success: false, message: "Email already in use" });
@@ -24,7 +23,6 @@ export const signup = async (req, res) => {
     if (!role || !allowedRoles.includes(role)) {
       role = "client";
     }
-
 
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
@@ -78,10 +76,10 @@ export const login = async (req, res) => {
     delete userData.password;
 
    res.cookie("token", token, {
-  httpOnly: true,
-  secure: true,
-  sameSite: "None",
-  maxAge: 7 * 24 * 60 * 60 * 1000,
+    httpOnly: true,
+     secure: true,
+     sameSite: "None",
+     maxAge:  24*60*60*1000,
 });
 
     res.json({success:true, message:"Login Successfull", user:userData})

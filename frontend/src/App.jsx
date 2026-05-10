@@ -30,10 +30,10 @@ const App = () => {
    const {user} = useSelector((state)=>state.auth)
     const [updateLocation] = useUpdateLocationMutation()
   const dispatch = useDispatch();
-  const [booting, setBooting] = useState(true);
- const { data, error, isLoading } = useGetUserQuery(undefined, {
-    skip: !localStorage.getItem("user"),
-  });
+  const [booting, setBooting] = useState(false);
+ const { data:userData, error, isLoading } = useGetUserQuery();
+ console.log(userData)
+ 
 
   useEffect(()=>{
 
@@ -51,11 +51,6 @@ const App = () => {
             latitude, 
             longitude
           }).unwrap();
-          if(res.success) {
-            // toast.success("Location Updated successfully")
-          } else {
-            toast.error("Location did not updated")
-          }
         } catch (error) {
           toast.error(error?.data?.message || "Failed to update the location")
         }
@@ -82,39 +77,14 @@ const App = () => {
     
   },[user, updateLocation])
 
- useEffect(() => {
-
-
-  const init = async () => {
-    const stored = localStorage.getItem("user");
-
-    if (!stored) {
-      setBooting(false);
-      return;
-    }
-
-    try {
-      if (data?.user) {
-        dispatch(setUser(data.user));
-      } else if (error) {
-        dispatch(logoutUser());
+  useEffect(()=>{
+      if(userData?.success){
+        dispatch(setUser(userData.data));
+      } else {
+         dispatch(logoutUser());
       }
-    } catch (err) {
-      dispatch(logoutUser());
-    } finally {
-      setBooting(false);
-    }
-  };
+  },[userData])
 
-  
-
-  const timer = setTimeout(() => {
-    init();
-  }, 2000);
-
-  return () => clearTimeout(timer);
-
-}, [data, error, dispatch]);
  useEffect(() => {
   if (user?._id) {
     socket.connect();
@@ -125,6 +95,8 @@ const App = () => {
     socket.disconnect();
   };
 }, [user]);
+
+
 if(booting) {
   return <SplashScreen />
 }
